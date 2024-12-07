@@ -45,15 +45,6 @@ Projeyi yerel makinenizde çalıştırmak için şu adımları izleyin:
 ![6](https://github.com/user-attachments/assets/1142b4a8-d236-4d2f-bcd8-2005f0d1e644)
 
 
-
-
-
-### 🌟 Ana Sayfa
-![Ana Sayfa](https://via.placeholder.com/800x400)
-
-### ⚙️ Admin Paneli
-![Admin Paneli](https://via.placeholder.com/800x400)
-
 ## 📄 Lisans
 
 Bu proje MIT lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasını inceleyebilirsiniz.
