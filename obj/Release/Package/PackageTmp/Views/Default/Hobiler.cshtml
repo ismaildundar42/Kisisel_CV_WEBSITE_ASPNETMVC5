@@ -1,0 +1,14 @@
+﻿@using UdemyMVCCVsitesi.Models.Entitiy
+@model List<tbl_hobiler>
+<div class="resume-section-content">
+    <h2 class="mb-5">Hobilerim</h2>
+    <ul class="fa-ul mb-0">
+        @foreach (var x in Model)
+        {
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                @x.Hobi1
+            </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,33 @@
+﻿@using UdemyMVCCVsitesi.Models.Entitiy
+@model List<tbl_login>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Kullanıcı Adı ve Şifre Yöneticisi</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>KULLANICI ADI</th>
+        <th>ŞİFRE</th>
+        <th>DÜZENLE</th>
+        <th>SİL</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.KullaniciAdi</td>
+            <td>@item.Sifre</td>
+            <td><a href="/Admin/AdminGuncelle/@item.ID/" class="btn btn-warning">GÜNCELLE</a></td>
+            <td><a href="/Admin/AdminSil/@item.ID" class="btn btn-danger">SİL</a></td>
+        </tr>
+    }
+</table>
+<br />
+
+<a href="/Admin/AdminEkle" class="btn btn-primary">Yeni Kullanıcı Ekle</a>

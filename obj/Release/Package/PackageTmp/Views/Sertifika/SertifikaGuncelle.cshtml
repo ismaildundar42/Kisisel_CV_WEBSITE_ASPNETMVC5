@@ -1,0 +1,24 @@
+﻿@model UdemyMVCCVsitesi.Models.Entitiy.tbl_oduller
+
+@{
+    ViewBag.Title = "SertifikaGuncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4>Sertifika Güncelleme Sayfası</h4>
+<br />
+<form class="form-group" method="post">
+
+    <div class="mb-3">
+        @Html.Label("Sertifika Tarih", htmlAttributes: new { @class = "form-label" })
+        @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control", })
+    </div>
+
+    <div class="mb-3">
+        @Html.Label("Sertifika Açıklaması", htmlAttributes: new { @class = "form-label" })
+        @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control", })
+    </div>
+
+    <button type="submit" class="btn btn-success">Güncelle</button>
+</form>

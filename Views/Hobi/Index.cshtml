@@ -1,0 +1,30 @@
+﻿@using UdemyMVCCVsitesi.Models.Entitiy
+@model List<tbl_hobiler>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>Hobi Listesi</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>HOBI</th>
+        <th>İŞLEMLER</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Hobi1</td>
+            <td><a href="/Hobi/HobiSil/@item.ID" class="btn btn-danger">SİL</a>
+            <a href="/Hobi/HobiGuncelle/@item.ID/" class="btn btn-warning">GÜNCELLE</a></td>
+        </tr>
+    }
+
+</table>
+
+<br />
+
+<a href="/Hobi/HobiEkle" class="btn btn-primary">Yeni Hobi Ekle</a>
